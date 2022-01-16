@@ -1,7 +1,12 @@
 <form>
-  <input type="text" #email placeholder="email">
-  <input type="text" #password placeholder="password">
-  <button type="submit" (click)="onSubmit(email.value, password.value, $event)">Log in</button>
+    <input type="text" #email placeholder="email" />
+    <input type="text" #password placeholder="password" />
+    <button
+        type="submit"
+        (click)="onSubmit(email.value, password.value, $event)"
+    >
+        Log in
+    </button>
 </form>
 
 <button type="button" (click)="onSignOut()">Sign Out</button>
